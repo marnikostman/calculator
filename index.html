@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta description="A calculator page">
+    <title>Calculator</title>
+    <script src="script.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="jumbotron text-right" id="display"</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2" >
+            <div class="btn btn-block" onclick="selectNum(1)">1</div>
+          </div>
+          <div class="col-xs-2">
+            <div class="btn btn-block" onclick="selectNum(2)">2</div>
+          </div>
+          <div class="col-xs-2">
+            <div class="btn btn-block" onclick="selectNum(3)">3</div>
+          </div>
+          <div class="col-xs-2">
+            <div class="btn btn-block" onclick="selectNum(4)">4</div>
+          </div>
+          <div class="col-xs-4">
+            <div class="btn btn-block" onclick="plus()">+</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">
+            <div class="btn btn-block" onclick="selectNum(5)">5</div>
+          </div>
+          <div class="col-xs-2">
+            <div class="btn btn-block" onclick="selectNum(6)">6</div>
+          </div>
+          <div class="col-xs-2">
+            <div class="btn btn-block" onclick="selectNum(7)">7</div>
+          </div>
+          <div class="col-xs-2">
+            <div class="btn btn-block" onclick="selectNum(8)">8</div>
+          </div>
+          <div class="col-xs-4">
+            <div class="btn btn-block" onclick="minus()">-</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2">
+            <div class="btn btn-block" onclick="selectNum(9)">9</div>
+          </div>
+          <div class="col-xs-2">
+            <div class="btn btn-block" onclick="selectNum(0)">0</div>
+          </div>
+          <div class="col-xs-2">
+            <div class="btn btn-block operator" onclick="remainder()">%</div>
+          </div>
+          <div class="col-xs-2">
+            <div class="btn btn-block operator" onclick="power()">^</div>
+          </div>
+          <div class="col-xs-4">
+            <div class="btn btn-block" onclick="multiply()">x</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4">
+            <div class="btn btn-block" onclick="clearCalc()" id="clear">C</div>
+          </div>
+          <div class="col-xs-4">
+            <div class="btn btn-block" onclick="equals()">=</div>
+          </div>
+          <div class="col-xs-4">
+            <div class="btn btn-block" onclick="divide()">/</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
